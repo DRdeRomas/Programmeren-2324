@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.starter img {
+    margin: 10px;
+    width: 25%;
+}
