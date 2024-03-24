@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" = href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- WEBSTIE ICOON MAKEN: https://www.favicon.cc -->
+    <link rel="icon" type="image/ico" href="img/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap" rel="stylesheet">
+    <title>Who's That Pokémon?</title>
 </head>
 
 <body>
-    <main>
+    <div class="container">
+        <h1>Who's That Starter Pokémon?</h1>
+        <p>Make a guess by clicking one of the given choices</p>
 
-    <div class="starter">
-        <img src="img/totodile.png" alt="Picture of a Totodile">
-        <img src="img/cyndaquil.png" alt="Picture of a Cyndaquil">
-        <img src="img/chikorita.png" alt="Picture of a Chikorita">
+        <div id="pokemon-container">
+            <img id="pokemon-image" src="" alt="Image of a random Starter Pokémon">
+            <audio id="pokemon-audio" src=""></audio>
+        </div>
+
+        <div id="options"></div>
+        
+        <p id="result"></p>
+        <div id="button-wrapper">
+            <button id="check-btn">Check Answer</button>
+            <button id="next-btn" style="display:none;">Next Pokémon</button>
+        </div>
     </div>
 
-    </main>
-    
     <script src="script.js"></script>
 </body>
 </html>
