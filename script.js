@@ -1,21 +1,21 @@
 console.log("Who's That Pokémon?")
 
 const pokemonList = [
-    "Bulbasaur",
-    "Charmander",
-    "Squirtle",
-    "Chikorita",
-    "Cyndaquil",
-    "Totodile",
-    "Treecko",
-    "Torchic",
-    "Mudkip",
-    "Turtwig",
-    "Chimchar",
-    "Piplup",
-    "Snivy",
-    "Tepig",
-    "Oshawott"
+    "bulbasaur",
+    "charmander",
+    "squirtle",
+    "chikorita",
+    "cyndaquil",
+    "totodile",
+    "treecko",
+    "torchic",
+    "mudkip",
+    "turtwig",
+    "chimchar",
+    "piplup",
+    "snivy",
+    "tepig",
+    "oshawott"
 ];
 
 var currentQuestion = 0;
@@ -27,8 +27,8 @@ function selectRandomPokemon() {
     if (currentQuestion < 5) {
         const randomIndex = Math.floor(Math.random() * pokemonList.length);
         const selectedPokemon = pokemonList[randomIndex];
-        document.getElementById('pokemon-image').src = "./img/" + selectedPokemon + ".png";
-        document.getElementById('pokemon-audio').src = "./audio/" + selectedPokemon + "_cry.mp3";
+        document.getElementById('pokemon-image').src = "img/" + selectedPokemon + ".png";
+        document.getElementById('pokemon-audio').src = "audio/" + selectedPokemon + "_cry.mp3";
         correctPokemon = selectedPokemon;
         makeQuestions(selectedPokemon);
     } else {
