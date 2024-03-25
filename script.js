@@ -27,8 +27,8 @@ function selectRandomPokemon() {
     if (currentQuestion < 5) {
         const randomIndex = Math.floor(Math.random() * pokemonList.length);
         const selectedPokemon = pokemonList[randomIndex];
-        document.getElementById('pokemon-image').src = "img/" + selectedPokemon + ".png";
-        document.getElementById('pokemon-audio').src = "audio/" + selectedPokemon + "_cry.mp3";
+        document.getElementById('pokemon-image').src = "./img/" + selectedPokemon + ".png";
+        document.getElementById('pokemon-audio').src = "./audio/" + selectedPokemon + "_cry.mp3";
         correctPokemon = selectedPokemon;
         makeQuestions(selectedPokemon);
     } else {
